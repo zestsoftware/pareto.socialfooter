@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="pareto.socialfooter">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Social Footer"
+      directory="profiles/default"
+      description='Extension profile for the "Social Footer" product.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
