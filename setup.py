@@ -26,7 +26,6 @@ setup(name='pareto.socialfooter',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'plone.app.registry',
       ],
       entry_points="""
       # -*- Entry points: -*-

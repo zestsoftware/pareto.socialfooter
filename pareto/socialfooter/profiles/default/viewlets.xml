@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <object>
   <order manager="plone.portalfooter" skinname="*">
-    <viewlet name="pareto.socialfooter" insert-before="*" />
+    <viewlet name="pareto.socialfooter" insert-after="*" />
   </order>
-
 </object>

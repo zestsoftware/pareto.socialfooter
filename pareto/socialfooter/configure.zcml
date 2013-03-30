@@ -1,13 +1,37 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="pareto.socialfooter">
 
   <five:registerPackage package="." initialize=".initialize" />
-  <include package=".browser" />
-  <include file="profiles.zcml" />
   
   <i18n:registerTranslations directory="locales" />
+  
+  <include file="profiles.zcml" />
+  
+  <browser:viewlet
+      name="pareto.socialfooter"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".browser.socialfooter.SocialFooterViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="socialfooter"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".browser.settings.SocialFooterPanel"
+      layer="*"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:resourceDirectory
+      name="pareto.socialfooter.mono"
+      directory="browser/mono"
+      layer="*"
+      />
+
+  <adapter factory=".browser.settings.SocialFooterPanelAdapter" />
 
 </configure>
