@@ -46,12 +46,12 @@ class ISocialFooterPanelSchema(Interface):
         values=sorted(PROVIDERS),
         default=sorted(PROVIDERS)[0])
     link = schema.URI(
-        title=u"Link to social page",
+        title=_(u"Link to social page"),
         required=False)
     icons = schema.List(
-        title=u"Icons",
+        title=_(u"Icons"),
         description=_(u'After removing one or more icons you have to save for '
                       u'the change to be permanent.'),
         required=False,
         default=[],
-        value_type=(schema.TextLine(title=u"Icon")))
+        value_type=(schema.TextLine(title=_(u"Icon"))))

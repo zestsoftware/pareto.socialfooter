@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-04-08 14:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: pareto.socialfooter\n"
+
+#: ./browser/socialfooter-panel.pt:132
+msgid "Add icon"
+msgstr "Ikoon toevoegen"
+
+#: ./browser/interfaces.py:53
+msgid "After removing one or more icons you have to save for the change to be permanent."
+msgstr "Na het verwijderen van één of meer ikonen moet je opslaan om de aanpassingen te behouden."
+
+#: ./browser/settings.py:92
+msgid "Changes saved."
+msgstr "Aanpassingen opgeslagen."
+
+#: ./browser/interfaces.py:35
+msgid "Choose icon color"
+msgstr "Kies een ikoon kleur"
+
+#: ./browser/interfaces.py:31
+msgid "Choose icon type"
+msgstr "Kies een ikoon type"
+
+#: ./browser/interfaces.py:45
+msgid "Choose social provider"
+msgstr "Kies een social media platform"
+
+#: ./browser/settings.py:42
+msgid "Create links to social platforms with icon from Mono."
+msgstr "Creër links naar social media platformen met de ikonen van Mono."
+
+#: ./browser/interfaces.py:57
+msgid "Icon"
+msgstr "Ikoon"
+
+#: ./browser/interfaces.py:52
+msgid "Icons"
+msgstr "Ikonen"
+
+#: ./browser/interfaces.py:49
+msgid "Link to social page"
+msgstr "Link naar naar social media platform pagina"
+
+#: ./browser/settings.py:96
+msgid "No changes made."
+msgstr "Geen aanpassingen gedaan."
+
+#: ./browser/interfaces.py:40
+msgid "Pixel size of the icon (square), the icons are 32px by default, bigger sizes will start to look blocky. Smaller should be fine."
+msgstr "Pixel grootte van het ikoon (vierkante verhouding). De ikonen zijn uit zichzelf 32 pixels breed en hoog. Grotere formaten houden in dat de afbeelding waarschijnlijk blokkerig toont. Kleiner zou geen problemen moeten opleveren."
+
+#: ./browser/socialfooter-panel.pt:71
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: ./browser/socialfooter-panel.pt:193
+msgid "Remove icon(s)"
+msgstr "Verwijder iko(o)n(en)"
+
+#: ./browser/interfaces.py:39
+msgid "Size"
+msgstr "Grootte"
+
+#: ./profiles/default/controlpanel.xml
+msgid "Social Footer"
+msgstr "Social Footer"
+
+#: ./browser/settings.py:40
+msgid "Social Footer Setup"
+msgstr "Social Footer Instellingen"
+
+#. Default: "Add icon"
+#: ./browser/settings.py:98
+msgid "label_add_icon"
+msgstr "Ikoon toevoegen"
+
+#. Default: "Save"
+#: ./browser/settings.py:110
+msgid "label_remove"
+msgstr "Verwijderen"
+
+#. Default: "Save icon properties"
+#: ./browser/settings.py:86
+msgid "label_save_icon_properties"
+msgstr "Opslaan"
+

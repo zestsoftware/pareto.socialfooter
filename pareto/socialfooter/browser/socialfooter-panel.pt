@@ -68,7 +68,8 @@
                     </div>
                             
                     <fieldset>
-                        <legend i18n:translate="">Properties</legend>
+                        <legend i18n:translate=""
+                                i18n:domain="pareto.socialfooter">Properties</legend>
                         <tal:block tal:repeat="widget view/widgets">
                             <div class="field"
                                  tal:condition="python:widget.name in ['form.color', 'form.type', 'form.size']"
@@ -128,7 +129,8 @@
                         
 
                     <fieldset>                        
-                        <legend i18n:translate="">Add icon</legend>
+                        <legend i18n:translate=""
+                                i18n:domain="pareto.socialfooter">Add icon</legend>
                         <tal:block tal:repeat="widget view/widgets">
                             
                             <div class="field"
@@ -188,7 +190,8 @@
                         
 
                     <fieldset>
-                        <legend i18n:translate="">Remove icon(s)</legend>
+                        <legend i18n:translate=""
+                                i18n:domain="pareto.socialfooter">Remove icon(s)</legend>
                         <tal:block tal:repeat="widget view/widgets">
                             
                             <div class="field"
