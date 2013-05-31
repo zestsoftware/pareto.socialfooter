@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-04-28 09:59+0000\n"
+"POT-Creation-Date: 2013-05-30 15:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: THijs <thijs@pareto.nl>\n"
 "Language-Team: Pareto <info@pareto.nl>\n"
@@ -82,6 +82,14 @@ msgstr ""
 msgid "Social Footer Setup"
 msgstr ""
 
+#: ./browser/interfaces.py:6
+msgid "black"
+msgstr ""
+
+#: ./browser/interfaces.py:7
+msgid "circle"
+msgstr ""
+
 #. Default: "Add icon"
 #: ./browser/settings.py:98
 msgid "label_add_icon"
@@ -95,5 +103,17 @@ msgstr ""
 #. Default: "Save icon properties"
 #: ./browser/settings.py:86
 msgid "label_save_icon_properties"
+msgstr ""
+
+#: ./browser/interfaces.py:7
+msgid "rounded"
+msgstr ""
+
+#: ./browser/interfaces.py:7
+msgid "transparent"
+msgstr ""
+
+#: ./browser/interfaces.py:6
+msgid "white"
 msgstr ""
 

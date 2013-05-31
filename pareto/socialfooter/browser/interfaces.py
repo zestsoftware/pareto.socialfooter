@@ -3,8 +3,8 @@ from zope import schema
 
 from pareto.socialfooter import _
 
-COLORS = ['black', 'white']
-TYPES = ['transparent', 'circle', 'rounded']
+COLORS = [_(u'black'), _(u'white')]
+TYPES = [_(u'transparent'), _(u'circle'), _(u'rounded')]
 PROVIDERS = [
     'quora', 'pinterest', 'imessage', 'foodspotting', 'etsy', 'about_me', 
     '500px', 'w3', 'stackoverflow', 'spotify', 'sound_cloud', 'smugmug', 
