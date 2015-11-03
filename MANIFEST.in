@@ -1,2 +1,4 @@
-recursive-include pareto *
+include *.rst
+graft docs
+graft pareto
 global-exclude *pyc *pyo
