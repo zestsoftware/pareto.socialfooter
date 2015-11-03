@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0 (unreleased)
+1.0 (2015-11-03)
 ----------------
 
 - Added instagram to list of providers.
