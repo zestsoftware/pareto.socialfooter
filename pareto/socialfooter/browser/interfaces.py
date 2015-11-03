@@ -55,6 +55,7 @@ PROVIDERS = [
     'icq',
     'identica',
     'imessage',
+    'instagram',
     'itune',
     'last.fm',
     'linkedin',

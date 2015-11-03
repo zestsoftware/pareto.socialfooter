@@ -4,6 +4,10 @@ Changelog
 1.0 (unreleased)
 ----------------
 
+- Added instagram to list of providers.
+  TODO: add icons for instagram.
+  [maurits]
+
 - Flake8, package cleanup.
   [maurits]
 
