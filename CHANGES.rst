@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2015-11-03)
 ----------------
 
 - Fixed saving after adding an icon.  It was only saved in memory, so
