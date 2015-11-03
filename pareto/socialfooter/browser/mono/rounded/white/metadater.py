@@ -7,10 +7,11 @@ import os
 file_names = []
 
 # get all files in the directory with an image extension
-for file_type in ['*.png','*.gif','*.jpg']:
+for file_type in ['*.png', '*.gif', '*.jpg']:
     file_names.extend(glob.glob(file_type))
 
-# create a files with '.metadata' added and fill them with the string in line 16
+# create a files with '.metadata' added and fill them with the string in
+# line 16
 for file_name in file_names:
     file = open('%s.metadata' % file_name, 'w')
     file.write('[default]\ncache = HTTPCache')

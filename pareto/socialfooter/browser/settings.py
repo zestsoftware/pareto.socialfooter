@@ -16,6 +16,7 @@ from pareto.socialfooter import _
 
 INTERFACE = 'pareto.socialfooter.browser.interfaces.ISocialFooterPanelSchema'
 
+
 class SocialFooterPanelAdapter(object):
 
     adapts(IPloneSiteRoot)
@@ -30,8 +31,8 @@ class SocialFooterPanelAdapter(object):
         self.provider = ''
         self.link = ''
         self.icons = registry.records.get('%s.%s' % (INTERFACE, 'icons')).value
-    
-    
+
+
 class SocialFooterPanel(ControlPanelForm):
 
     template = ViewPageTemplateFile('socialfooter-panel.pt')
@@ -47,7 +48,7 @@ class SocialFooterPanel(ControlPanelForm):
             color=registry.records.get('%s.%s' % (INTERFACE, 'color')).value,
             type=registry.records.get('%s.%s' % (INTERFACE, 'type')).value,
             icons=registry.records.get('%s.%s' % (INTERFACE, 'icons')).value,
-            )
+        )
 
     def extra_script(self):
         return """
@@ -83,7 +84,7 @@ $('.sequencewidget .textType').hide().each(function(){
 });
         """
 
-    @form.action(_(u'label_save_icon_properties', 
+    @form.action(_(u'label_save_icon_properties',
                    default=u'Save icon properties'), name=u'save_properties')
     def handle_edit_action(self, action, data):
         CheckAuthenticator(self.request)
@@ -95,7 +96,7 @@ $('.sequencewidget .textType').hide().each(function(){
         else:
             self.status = _("No changes made.")
 
-    @form.action(_(u'label_add_icon', 
+    @form.action(_(u'label_add_icon',
                    default=u'Add icon'), name=u'add_icon')
     def handle_edit_action(self, action, data):
         CheckAuthenticator(self.request)
@@ -107,7 +108,7 @@ $('.sequencewidget .textType').hide().each(function(){
         else:
             self.status = _("No changes made.")
 
-    @form.action(_(u'label_remove', 
+    @form.action(_(u'label_remove',
                    default=u'Save'), name=u'remove')
     def handle_edit_action(self, action, data):
         CheckAuthenticator(self.request)
@@ -120,23 +121,24 @@ $('.sequencewidget .textType').hide().each(function(){
             self.status = _("No changes made.")
 
     def remodel(self, html):
-        import pdb; pdb.set_trace()
+        import pdb
+        pdb.set_trace()
 
     def _on_save(self, data=None):
         registry = getUtility(IRegistry)
         if 'form.actions.save_properties' in self.request.form:
             registry.records.get('%s.%s' % (INTERFACE, 'type')
-                ).value = data['type']
+                                 ).value = data['type']
             registry.records.get('%s.%s' % (INTERFACE, 'color')
-                ).value = data['color']
+                                 ).value = data['color']
             registry.records.get('%s.%s' % (INTERFACE, 'size')
-                ).value = data['size']
+                                 ).value = data['size']
             return
-        
+
         if 'form.actions.add_icon' in self.request.form:
             registry.records.get('%s.%s' % (INTERFACE, 'icons')
-                ).value.append('%s|%s' % (data['provider'], data['link']))
-            
+                                 ).value.append('%s|%s' % (data['provider'], data['link']))
+
         if 'form.actions.remove' in self.request.form:
             registry.records.get('%s.%s' % (INTERFACE, 'icons')
-                ).value = data['icons']
+                                 ).value = data['icons']

@@ -31,25 +31,25 @@ def test_suite():
     return unittest.TestSuite([
 
         # Unit tests
-        #doctestunit.DocFileSuite(
+        # doctestunit.DocFileSuite(
         #    'README.txt', package='pareto.socialfooter',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
-        #doctestunit.DocTestSuite(
+        # doctestunit.DocTestSuite(
         #    module='pareto.socialfooter.mymodule',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
 
         # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
+        # ztc.ZopeDocFileSuite(
         #    'README.txt', package='pareto.socialfooter',
         #    test_class=TestCase),
 
-        #ztc.FunctionalDocFileSuite(
+        # ztc.FunctionalDocFileSuite(
         #    'browser.txt', package='pareto.socialfooter',
         #    test_class=TestCase),
 
-        ])
+    ])
 
 if __name__ == '__main__':
     unittest.main(defaultTest='test_suite')
