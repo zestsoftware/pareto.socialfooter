@@ -85,7 +85,7 @@ $('.sequencewidget .textType').hide().each(function(){
 
     @form.action(_(u'label_save_icon_properties',
                    default=u'Save icon properties'), name=u'save_properties')
-    def handle_edit_action(self, action, data):
+    def handle_properties_action(self, action, data):
         CheckAuthenticator(self.request)
         if form.applyChanges(self.context, self.form_fields, data,
                              self.adapters):
@@ -97,7 +97,7 @@ $('.sequencewidget .textType').hide().each(function(){
 
     @form.action(_(u'label_add_icon',
                    default=u'Add icon'), name=u'add_icon')
-    def handle_edit_action(self, action, data):
+    def handle_add_icon_action(self, action, data):
         CheckAuthenticator(self.request)
         if form.applyChanges(self.context, self.form_fields, data,
                              self.adapters):
@@ -109,7 +109,7 @@ $('.sequencewidget .textType').hide().each(function(){
 
     @form.action(_(u'label_remove',
                    default=u'Save'), name=u'remove')
-    def handle_edit_action(self, action, data):
+    def handle_save_action(self, action, data):
         CheckAuthenticator(self.request)
         if form.applyChanges(self.context, self.form_fields, data,
                              self.adapters):
@@ -118,10 +118,6 @@ $('.sequencewidget .textType').hide().each(function(){
             self._on_save(data)
         else:
             self.status = _("No changes made.")
-
-    def remodel(self, html):
-        import pdb
-        pdb.set_trace()
 
     def _on_save(self, data=None):
         registry = getUtility(IRegistry)
