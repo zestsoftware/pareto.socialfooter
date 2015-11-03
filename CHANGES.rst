@@ -8,6 +8,9 @@ Changelog
   TODO: add icons for instagram.
   [maurits]
 
+- Added documentation on how to ad a new icon.
+  [maurits]
+
 - Flake8, package cleanup.
   [maurits]
 
