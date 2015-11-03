@@ -39,8 +39,8 @@ class ISocialFooterPanelSchema(Interface):
     size = schema.Int(
         title=_(u'Size'),
         description=_(u'Pixel size of the icon (square), the icons are 32px '
-                      u'by default, bigger sizes will start to look blocky. Smaller '
-                      u'should be fine.'),
+                      u'by default, bigger sizes will start to look blocky. '
+                      u'Smaller should be fine.'),
         default=32)
     provider = schema.Choice(
         title=_(u'Choose social provider'),

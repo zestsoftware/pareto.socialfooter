@@ -1,4 +1,3 @@
-from zope.interface import Interface
 from zope.formlib import form
 from zope.interface import implements
 from zope.component import adapts
@@ -136,8 +135,9 @@ $('.sequencewidget .textType').hide().each(function(){
             return
 
         if 'form.actions.add_icon' in self.request.form:
-            registry.records.get('%s.%s' % (INTERFACE, 'icons')
-                                 ).value.append('%s|%s' % (data['provider'], data['link']))
+            registry.records.get(
+                '%s.%s' % (INTERFACE, 'icons')
+                ).value.append('%s|%s' % (data['provider'], data['link']))
 
         if 'form.actions.remove' in self.request.form:
             registry.records.get('%s.%s' % (INTERFACE, 'icons')

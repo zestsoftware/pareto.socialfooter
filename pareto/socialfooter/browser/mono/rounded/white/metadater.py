@@ -3,7 +3,6 @@
 "Adding cache headers for image files in a directory"
 
 import glob
-import os
 file_names = []
 
 # get all files in the directory with an image extension
