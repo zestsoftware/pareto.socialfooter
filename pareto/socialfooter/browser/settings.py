@@ -126,19 +126,23 @@ $('.sequencewidget .textType').hide().each(function(){
     def _on_save(self, data=None):
         registry = getUtility(IRegistry)
         if 'form.actions.save_properties' in self.request.form:
-            registry.records.get('%s.%s' % (INTERFACE, 'type')
-                                 ).value = data['type']
-            registry.records.get('%s.%s' % (INTERFACE, 'color')
-                                 ).value = data['color']
-            registry.records.get('%s.%s' % (INTERFACE, 'size')
-                                 ).value = data['size']
+            record_type = registry.records.get('%s.%s' % (INTERFACE, 'type'))
+            record_type.value = data['type']
+            record_color = registry.records.get('%s.%s' % (INTERFACE, 'color'))
+            record_color.value = data['color']
+            record_size = registry.records.get('%s.%s' % (INTERFACE, 'size'))
+            record_size.value = data['size']
             return
 
         if 'form.actions.add_icon' in self.request.form:
-            registry.records.get(
-                '%s.%s' % (INTERFACE, 'icons')
-                ).value.append('%s|%s' % (data['provider'], data['link']))
+            record = registry.records.get('%s.%s' % (INTERFACE, 'icons'))
+            value = record.value
+            value.append('%s|%s' % (data['provider'], data['link']))
+            # This is not a PersistentList, but a standard Python list, so
+            # appending is not enough to persistently save it: we need to set
+            # the value explicitly.
+            record.value = value
 
         if 'form.actions.remove' in self.request.form:
-            registry.records.get('%s.%s' % (INTERFACE, 'icons')
-                                 ).value = data['icons']
+            record = registry.records.get('%s.%s' % (INTERFACE, 'icons'))
+            record.value = data['icons']

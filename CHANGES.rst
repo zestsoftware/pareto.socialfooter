@@ -4,7 +4,9 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fixed saving after adding an icon.  It was only saved in memory, so
+  it did not survive a restart.
+  [maurits]
 
 
 1.0 (2015-11-03)
