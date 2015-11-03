@@ -133,7 +133,7 @@ $('.sequencewidget .textType').hide().each(function(){
         if 'form.actions.add_icon' in self.request.form:
             record = registry.records.get('%s.%s' % (INTERFACE, 'icons'))
             value = record.value
-            value.append('%s|%s' % (data['provider'], data['link']))
+            value.append(u'%s|%s' % (data['provider'], data['link']))
             # This is not a PersistentList, but a standard Python list, so
             # appending is not enough to persistently save it: we need to set
             # the value explicitly.
