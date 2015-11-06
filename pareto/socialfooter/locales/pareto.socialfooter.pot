@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-11-03 11:28+0000\n"
+"POT-Creation-Date: 2015-11-06 12:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Add icon"
 msgstr ""
 
-#: ./browser/interfaces.py:54
+#: ./browser/interfaces.py:137
 msgid "After removing one or more icons you have to save for the change to be permanent."
 msgstr ""
 
@@ -29,15 +29,15 @@ msgstr ""
 msgid "Changes saved."
 msgstr ""
 
-#: ./browser/interfaces.py:36
+#: ./browser/interfaces.py:119
 msgid "Choose icon color"
 msgstr ""
 
-#: ./browser/interfaces.py:32
+#: ./browser/interfaces.py:115
 msgid "Choose icon type"
 msgstr ""
 
-#: ./browser/interfaces.py:46
+#: ./browser/interfaces.py:129
 msgid "Choose social provider"
 msgstr ""
 
@@ -45,15 +45,15 @@ msgstr ""
 msgid "Create links to social platforms with icon from Mono."
 msgstr ""
 
-#: ./browser/interfaces.py:58
+#: ./browser/interfaces.py:141
 msgid "Icon"
 msgstr ""
 
-#: ./browser/interfaces.py:53
+#: ./browser/interfaces.py:136
 msgid "Icons"
 msgstr ""
 
-#: ./browser/interfaces.py:50
+#: ./browser/interfaces.py:133
 msgid "Link to social page"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 msgid "No changes made."
 msgstr ""
 
-#: ./browser/interfaces.py:41
+#: ./browser/interfaces.py:124
 msgid "Pixel size of the icon (square), the icons are 32px by default, bigger sizes will start to look blocky. Smaller should be fine."
 msgstr ""
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Remove icon(s)"
 msgstr ""
 
-#: ./browser/interfaces.py:40
+#: ./browser/interfaces.py:123
 msgid "Size"
 msgstr ""
 
