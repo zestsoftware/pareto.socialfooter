@@ -1,4 +1,4 @@
-<div id="portal-social-footer" 
+<div id="portal-social-footer"
      tal:define="icons view/icons"
      tal:condition="icons"
      tal:content="structure icons"></div>

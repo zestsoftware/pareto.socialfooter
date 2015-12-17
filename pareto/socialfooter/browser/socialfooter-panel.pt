@@ -14,8 +14,8 @@
         <style>
             input[name=form.icons.add] {display: none}
         </style>
-    </metal:main>    
-    <metal:main fill-slot="prefs_configlet_main">    
+    </metal:main>
+    <metal:main fill-slot="prefs_configlet_main">
 
         <metal:form metal:define-macro="form">
 
@@ -52,7 +52,7 @@
                tal:content="view/description">
                 Description
             </div>
-            
+
 
             <div id="content-core" class="row">
                 <form action="."
@@ -66,7 +66,7 @@
 
                     <div metal:define-slot="extra_info" tal:replace="nothing">
                     </div>
-                            
+
                     <fieldset>
                         <legend i18n:translate=""
                                 i18n:domain="pareto.socialfooter">Properties</legend>
@@ -76,7 +76,7 @@
                                  tal:define="description widget/hint;
                                              error widget/error"
                                  tal:attributes="class python:'field'+(error and ' error' or '')">
-                                    
+
                                 <label i18n:translate=""
                                        tal:attributes="for widget/name"
                                        tal:content="widget/label">
@@ -108,9 +108,9 @@
                                 </div>
 
                                 <metal:block define-slot="above_buttons" />
-            
+
                                 <div class="visualClear"><!-- --></div>
-            
+
                             </div>
 
                         </tal:block>
@@ -119,26 +119,26 @@
                                   tal:condition="view/availableActions"
                                   metal:define-slot="bottom_buttons">
                               <tal:action repeat="action view/actions">
-                                <input tal:condition="python:action.name == u'save_properties'" 
+                                <input tal:condition="python:action.name == u'save_properties'"
                                        tal:replace="structure action/render" />
                               </tal:action>
                             </span>
                         </div>
-                            
-                    </fieldset>
-                        
 
-                    <fieldset>                        
+                    </fieldset>
+
+
+                    <fieldset>
                         <legend i18n:translate=""
                                 i18n:domain="pareto.socialfooter">Add icon</legend>
                         <tal:block tal:repeat="widget view/widgets">
-                            
+
                             <div class="field"
                                  tal:condition="python:widget.name in ['form.provider', 'form.link']"
                                  tal:define="description widget/hint;
                                              error widget/error"
                                  tal:attributes="class python:'field'+(error and ' error' or '')">
-                                    
+
                                 <label i18n:translate=""
                                        tal:attributes="for widget/name"
                                        tal:content="widget/label">
@@ -170,9 +170,9 @@
                                 </div>
 
                                 <metal:block define-slot="above_buttons" />
-            
+
                                 <div class="visualClear"><!-- --></div>
-            
+
                             </div>
 
                         </tal:block>
@@ -181,25 +181,25 @@
                                   tal:condition="view/availableActions"
                                   metal:define-slot="bottom_buttons">
                               <tal:action repeat="action view/actions">
-                                <input tal:condition="python:action.name == u'add_icon'" 
+                                <input tal:condition="python:action.name == u'add_icon'"
                                        tal:replace="structure action/render" />
                               </tal:action>
                             </span>
                         </div>
                     </fieldset>
-                        
+
 
                     <fieldset>
                         <legend i18n:translate=""
                                 i18n:domain="pareto.socialfooter">Remove icon(s)</legend>
                         <tal:block tal:repeat="widget view/widgets">
-                            
+
                             <div class="field"
                                  tal:condition="python:widget.name in ['form.icons']"
                                  tal:define="description widget/hint;
                                              error widget/error"
                                  tal:attributes="class python:'field'+(error and ' error' or '')">
-                                    
+
                                 <label i18n:translate=""
                                        tal:attributes="for widget/name"
                                        tal:content="widget/label">
@@ -226,15 +226,15 @@
                                     The Error
                                 </div>
 
-                                <div class="widget" 
+                                <div class="widget"
                                      tal:content="structure widget">
                                     <input type="text" />
                                 </div>
 
                                 <metal:block define-slot="above_buttons" />
-            
+
                                 <div class="visualClear"><!-- --></div>
-            
+
                             </div>
 
                         </tal:block>
@@ -243,7 +243,7 @@
                                   tal:condition="view/availableActions"
                                   metal:define-slot="bottom_buttons">
                               <tal:action repeat="action view/actions">
-                                <input tal:condition="python:action.name == u'remove'" 
+                                <input tal:condition="python:action.name == u'remove'"
                                        tal:replace="structure action/render" />
                               </tal:action>
                             </span>

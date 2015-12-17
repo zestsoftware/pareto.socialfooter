@@ -6,11 +6,11 @@
     i18n_domain="pareto.socialfooter">
 
   <five:registerPackage package="." initialize=".initialize" />
-  
+
   <i18n:registerTranslations directory="locales" />
-  
+
   <include file="profiles.zcml" />
-  
+
   <browser:viewlet
       name="pareto.socialfooter"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
