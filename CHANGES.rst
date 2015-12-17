@@ -4,7 +4,12 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Minor code cleanup.
+  [maurits]
+
+- Rebuild i18n. Only line number changes.
+  [maurits]
+
 
 
 1.1 (2015-11-03)
