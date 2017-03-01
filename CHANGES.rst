@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.3 (2017-03-01)
 ----------------
 
 - Make urls to icons absolute to optimize caching, saves 3 requests per
