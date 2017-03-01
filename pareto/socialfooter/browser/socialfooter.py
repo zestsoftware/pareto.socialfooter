@@ -8,7 +8,7 @@ TEMPLATE = '''<a href="%(url)s" id="socialfooter_%(id)s">
     <img src="%(src)s" alt="%(title)s" title="%(title)s"
          width="%(size)s" height="%(size)s"/>
 </a>'''
-RESOURCE = '++resource++pareto.socialfooter.mono'
+RESOURCE = '/++resource++pareto.socialfooter.mono'
 EXT = '.png'
 
 

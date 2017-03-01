@@ -4,7 +4,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Make urls to icons absolute to optimize caching, saves 3 requests per
+  page. [jladage]
 
 
 1.2 (2015-12-17)
